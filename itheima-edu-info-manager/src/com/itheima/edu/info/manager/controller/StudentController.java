@@ -22,6 +22,7 @@ public class StudentController {
                     break;
                 case "2":
                     System.out.println("删除");
+
                     break;
                 case "3":
                     System.out.println("修改");
