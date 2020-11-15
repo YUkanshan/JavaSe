@@ -19,17 +19,17 @@ public class InfoManagerEntry {
                     studentController.star();
                     break;
                 case "2":
-                        //System.out.println("老师管理");
+                    //System.out.println("老师管理");
                     TeacherController teacherController=new TeacherController();
                     teacherController.star();
-                        break;
+                    break;
                 case "3":
                     System.out.println("感谢您的使用");
                     //退出当前虚拟机
                     System.exit(0);
-                    default:
-                        System.out.println("您输入的信息有误,请重新输入");
-                        break;
+                default:
+                    System.out.println("您输入的信息有误,请重新输入");
+                    break;
             }
         }
     }
