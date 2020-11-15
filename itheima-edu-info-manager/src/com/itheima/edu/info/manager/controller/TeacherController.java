@@ -12,6 +12,7 @@ public class TeacherController {
     //创建一个业务员对象以用来调用方法
     TeacherService teacherService = new TeacherService();
 
+    //菜单界面
     public void star() {
 
         //建立一个死循环,因为不确定用户的使用次数
