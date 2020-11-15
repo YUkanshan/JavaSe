@@ -35,4 +35,21 @@ public class StudentService {
         }//最后返回exisits
         return  exists;
     }
+    //findAllStudent方法
+    public Student[] findAllStudent(){
+        Student[] allStudent = studentDao.findAllStudent();
+        boolean flag = false;
+        for(int i =0;i<allStudent.length;i++){
+            Student stu = allStudent[i];
+            if (stu!=null){
+                flag = true;
+                break;;
+            }
+        }
+        if (flag){
+            return  allStudent;
+        }else {
+            return  null;
+        }
+    }
 }

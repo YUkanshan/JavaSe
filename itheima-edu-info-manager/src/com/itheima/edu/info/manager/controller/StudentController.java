@@ -6,7 +6,7 @@ import com.itheima.edu.info.manager.service.StudentService;
 import java.util.Scanner;
 
 public class StudentController {
-
+    StudentService studentService = new StudentService();
     public void star() {
         Scanner sc = new Scanner(System.in);
 
@@ -28,7 +28,8 @@ public class StudentController {
                     System.out.println("修改");
                     break;
                 case "4":
-                    System.out.println("查询");
+                    //System.out.println("查询");
+                    findAllStudent();
                     break;
                 case "5":
                     System.out.println("感谢您的使用,再见");
@@ -47,7 +48,7 @@ public class StudentController {
         while (true) {//使用无限循环,让用户一直输入学号,直至学号正确为止
             System.out.println("请输入学号");
             id = sc.next();
-            StudentService studentService = new StudentService();
+
             boolean exists = studentService.isExists(id);//在业务员层面返回一个判断结果
             //根据业务员返回的结果进行判断
             if (exists) {
@@ -75,6 +76,24 @@ public class StudentController {
             System.out.println("学生信息添加成功");
         } else if (result == false) {
             System.out.println("对不起,学生信息添加失败");
+        }
+    }
+    //查询方法
+    public void findAllStudent(){
+        Student[] stus = studentService.findAllStudent();
+        //判断数组的内存地址,是否为Null
+        if (stus==null){
+            System.out.println("差五信息,请添加后重试");
+            return;
+        }
+        //遍历数组,获取学生信息并打印在控制台
+        System.out.println("学号\t\t姓名\t年龄\t生日");
+        for (int i = 0; i < stus.length; i++) {
+            Student stu=stus[i];
+            if (stu!=null){//这个NULL测验可以避免空指针异常
+                System.out.println(stu.getId() + "\t" + stu.getName() + "\t" + stu.getAge() + "\t" + stu.getBrithday);
+
+            }
         }
     }
 }
