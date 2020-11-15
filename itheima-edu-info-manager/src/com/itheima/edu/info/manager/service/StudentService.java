@@ -37,13 +37,15 @@ public class StudentService {
     }
     //findAllStudent方法
     public Student[] findAllStudent(){
-        Student[] allStudent = studentDao.findAllStudent();
-        boolean flag = false;
+        //接受从仓库传递过来的数组
+        Student[] allStudent = dao.findAllStudent();
+        boolean flag = false;//标记为思想,先假定数组为空
+        //进行遍历,看数组是否为空,但凡有数组中有一个老师对象,数组都不算为空,也就是可以进行打印展示
         for(int i =0;i<allStudent.length;i++){
             Student stu = allStudent[i];
             if (stu!=null){
                 flag = true;
-                break;;
+                break;
             }
         }
         if (flag){
@@ -52,4 +54,15 @@ public class StudentService {
             return  null;
         }
     }
+
+    public void deletstStudentById(String delId) {
+        //指挥库管根据学号删除对应学生,也就是讲在业务员这一层,要做的只是讲学号传递下去
+        dao.deleteStudentById(delId);
+    }
+
+    public void upStudent(String updateId, Student newStu) {
+        dao.updateStudent(updateId,newStu);
+    }
+
+
 }
