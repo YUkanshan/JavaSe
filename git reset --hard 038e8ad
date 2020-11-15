@@ -1,0 +1,30 @@
+[33m938d7e8[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m HEAD@{0}: commit: 今日学习Static 以及对黑马管理系统进行革新,将类进行分工
+[33m038e8ad[m HEAD@{1}: reset: moving to 038e8ad
+[33m85fc7ad[m HEAD@{2}: reset: moving to HEAD
+[33m85fc7ad[m HEAD@{3}: commit: 修改
+[33m038e8ad[m HEAD@{4}: commit: 今日学习Static 以及对黑马管理系统进行革新,将类进行分工
+[33m799d559[m HEAD@{5}: commit: 先push再pull就可以提示错误
+[33m5e07164[m[33m ([m[1;31morigin/master[m[33m)[m HEAD@{6}: commit (merge): 先push再pull就可以提示错误
+[33mcc3ca92[m HEAD@{7}: commit: 这是一次试错测验
+[33ma229155[m HEAD@{8}: commit (merge): 这是一次试错测验
+[33m22468dd[m HEAD@{9}: commit: 20
+[33m2809bd8[m HEAD@{10}: pull origin: Fast-forward
+[33meb4339a[m HEAD@{11}: reset: moving to eb4339a
+[33me683e37[m HEAD@{12}: reset: moving to HEAD
+[33me683e37[m HEAD@{13}: reset: moving to HEAD
+[33me683e37[m HEAD@{14}: commit: 这是从远程仓库传输回来再push的测试
+[33m2809bd8[m HEAD@{15}: pull origin master: Fast-forward
+[33meb4339a[m HEAD@{16}: commit: 这是一次关于远程仓库传输的测试
+[33m9f9979a[m HEAD@{17}: commit: 这是关于dev被主干合并之后的测试日志
+[33m7c5225e[m HEAD@{18}: merge dev: Fast-forward
+[33m49a8fcc[m HEAD@{19}: checkout: moving from dev to master
+[33m7c5225e[m HEAD@{20}: checkout: moving from master to dev
+[33m49a8fcc[m HEAD@{21}: checkout: moving from dev to master
+[33m7c5225e[m HEAD@{22}: commit: 这是关于dev分支的测试
+[33m49a8fcc[m HEAD@{23}: checkout: moving from master to dev
+[33m49a8fcc[m HEAD@{24}: checkout: moving from dev to master
+[33m49a8fcc[m HEAD@{25}: checkout: moving from master to dev
+[33m49a8fcc[m HEAD@{26}: commit: 这是第一次仓库传送
+[33m33d39c0[m HEAD@{27}: commit: 这是第一次仓库传送
+[33mcc5d052[m HEAD@{28}: commit: 这是第一次仓库传送
+[33mc30c3cc[m HEAD@{29}: commit (initial): 这是第一次仓库传送
