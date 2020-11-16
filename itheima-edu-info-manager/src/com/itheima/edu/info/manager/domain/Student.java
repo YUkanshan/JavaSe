@@ -1,12 +1,12 @@
 package com.itheima.edu.info.manager.domain;
 
 public class Student {
-    private  String id;
-    private  String name;
+    private String id;
+    private String name;
     private String age;
     private String brithday;
-    //有参无参构造
-    public Student(){
+
+    public Student() {
 
     }
 
@@ -16,7 +16,7 @@ public class Student {
         this.age = age;
         this.brithday = brithday;
     }
-//get set封装
+
     public String getId() {
         return id;
     }
