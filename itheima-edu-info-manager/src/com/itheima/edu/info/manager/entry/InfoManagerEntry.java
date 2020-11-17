@@ -1,5 +1,6 @@
 package com.itheima.edu.info.manager.entry;
 
+import com.itheima.edu.info.manager.controller.OtherStudentController;
 import com.itheima.edu.info.manager.controller.StudentController;
 import com.itheima.edu.info.manager.controller.TeacherController;
 
@@ -15,7 +16,7 @@ public class InfoManagerEntry {
             String choice = sc.next();
             switch (choice){
                 case "1":
-                    StudentController studentController = new StudentController();
+                    OtherStudentController studentController = new OtherStudentController();
                     studentController.star();
                     break;
                 case "2":

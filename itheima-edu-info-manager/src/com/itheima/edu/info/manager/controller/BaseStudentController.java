@@ -5,10 +5,43 @@ import com.itheima.edu.info.manager.service.StudentService;
 
 import java.util.Scanner;
 
-public class StudentController extends BaseStudentController{
+public class BaseStudentController {
     StudentService studentService = new StudentService();
    private Scanner sc = new Scanner(System.in);
-   @Override
+
+    public void star() {
+
+
+        lo:
+        while (true) {
+            System.out.println("-----欢迎来到学生管理系统-----");
+            System.out.println("1.添加学生,2.删除学生,3.修改学生,4.查询学生,5.退出");
+            String choice = sc.next();
+            switch (choice) {
+                case "1":
+                    //System.out.println("添加");
+                    addStudent();
+                    break;
+                case "2":
+                    // System.out.println("删除");
+                    deleteStudentById();
+                    break;
+                case "3":
+                    // System.out.println("修改");
+                    updateStudent();
+                    break;
+                case "4":
+                    //System.out.println("查询");
+                    findAllStudent();
+                    break;
+                case "5":
+                    System.out.println("感谢您的使用,再见");
+                    break lo;
+
+            }
+        }
+    }
+
     //添加学生
     public void addStudent() {
         Scanner sc = new Scanner(System.in);
@@ -36,11 +69,7 @@ public class StudentController extends BaseStudentController{
         System.out.println("请输入生日");
         String brithday = sc.next();
         //将输入的学生各类信息封装为一个学生类
-        Student stu = new Student();
-        stu.setId(id);
-        stu.setName(name);
-        stu.setAge(age);
-        stu.setBrithday(brithday);
+        Student stu = new Student(id, name, age, brithday);
         //将封装的学生传递给StudentService
         //首先先创建一个StudentServeice对象
         StudentService studentService = new StudentService();
