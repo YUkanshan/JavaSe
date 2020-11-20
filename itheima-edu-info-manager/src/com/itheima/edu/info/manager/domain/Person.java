@@ -4,17 +4,16 @@ public class Person {
     private String id;
     private String name;
     private String age;
-    private String brithday;
+    private String birthday;
 
     public Person() {
-
     }
 
-    public Person(String id, String name, String age, String brithday) {
+    public Person(String id, String name, String age, String birthday) {
         this.id = id;
         this.name = name;
         this.age = age;
-        this.brithday = brithday;
+        this.birthday = birthday;
     }
 
     public String getId() {
@@ -41,11 +40,11 @@ public class Person {
         this.age = age;
     }
 
-    public String getBrithday() {
-        return brithday;
+    public String getBirthday() {
+        return birthday;
     }
 
-    public void setBrithday(String brithday) {
-        this.brithday = brithday;
+    public void setBirthday(String birthday) {
+        this.birthday = birthday;
     }
 }
